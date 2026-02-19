@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="GlowGuide — AI-powered personalized skincare routines backed by science. Take the Skin Quiz and get your unique glow." />
+  <title>GlowGuide — Your Skin, Decoded.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════ NAVBAR ═══════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-icon">✦</span>
+        glowguide
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#quiz">Daily Quiz</a></li>
+        <li><a href="#products">The Shelf</a></li>
+        <li><a href="#community">Community</a></li>
+        <li><a href="#ethos">Our Ethos</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#" class="btn-text">Log In</a>
+        <a href="#quiz" class="btn-primary btn-sm">Join Glow</a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════ HERO ═══════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          AI-Powered Skin Analysis
+        </div>
+
+        <h1 class="hero-title">
+          Your Skin,<br />
+          <em>Decoded.</em>
+        </h1>
+
+        <p class="hero-sub">
+          Personalized routines backed by science and<br />
+          curated for your unique glow. No more guesswork,<br />
+          just results.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#quiz" class="btn-primary btn-lg" id="takeQuizBtn">
+            Take the Skin Quiz
+          </a>
+          <a href="#how" class="btn-ghost btn-lg">
+            <span class="play-icon">▶</span>
+            How it works
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-img-wrapper">
+          <img
+            src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=520&h=620&fit=crop&crop=faces"
+            alt="Woman with glowing clear skin"
+            class="hero-img"
+            loading="eager"
+          />
+          <div class="hero-card">
+            <p class="hero-card-quote">
+              "The first routine that actually worked for my hormonal acne."
+            </p>
+            <span class="hero-card-author">— Maya, 24</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- decorative blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+  </section>
+
+  <!-- ═══════════════ CULT FAVORITES ═══════════════ -->
+  <section class="products" id="products">
+    <div class="section-container">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Cult Favorites</h2>
+          <p class="section-sub">Community approved essentials for every routine.</p>
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-btn" id="prevBtn" aria-label="Previous">&#8592;</button>
+          <button class="carousel-btn" id="nextBtn" aria-label="Next">&#8594;</button>
+        </div>
+      </div>
+
+      <div class="products-track-wrapper">
+        <div class="products-track" id="productsTrack">
+
+          <div class="product-card">
+            <div class="product-img-box" style="background:#f5e6cc;">
+              <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=300&h=280&fit=crop" alt="Dew Drops Serum" />
+            </div>
+            <div class="product-info">
+              <div class="product-top">
+                <h3 class="product-name">Dew Drops Serum</h3>
+                <span class="product-price">$34</span>
+              </div>
+              <p class="product-tag">Hydration + Glow</p>
+              <div class="product-stars">
+                <span class="stars">★★★★</span><span class="star-half">½</span>
+                <span class="review-count">(1.3k)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img-box" style="background:#d6eae8;">
+              <img src="https://images.unsplash.com/photo-1556229174-5e42a09b45c3?w=300&h=280&fit=crop" alt="Cloud Cream" />
+            </div>
+            <div class="product-info">
+              <div class="product-top">
+                <h3 class="product-name">Cloud Cream</h3>
+                <span class="product-price">$28</span>
+              </div>
+              <p class="product-tag">Moisturize + Barrier Repair</p>
+              <div class="product-stars">
+                <span class="stars">★★★★★</span>
+                <span class="review-count">(897)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img-box" style="background:#f7dce6;">
+              <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=300&h=280&fit=crop" alt="Mist Refresh" />
+            </div>
+            <div class="product-info">
+              <div class="product-top">
+                <h3 class="product-name">Mist Refresh</h3>
+                <span class="product-price">$22</span>
+              </div>
+              <p class="product-tag">Revitalize + Tone</p>
+              <div class="product-stars">
+                <span class="stars">★★★★</span><span class="star-half">½</span>
+                <span class="review-count">(415)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img-box" style="background:#f7e1c0;">
+              <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=300&h=280&fit=crop" alt="Brighten Up" />
+            </div>
+            <div class="product-info">
+              <div class="product-top">
+                <h3 class="product-name">Brighten Up</h3>
+                <span class="product-price">$42</span>
+              </div>
+              <p class="product-tag">Vitamin C + Energy</p>
+              <div class="product-stars">
+                <span class="stars">★★★★</span>
+                <span class="review-count">(602)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img-box" style="background:#e8d5f0;">
+              <img src="https://images.unsplash.com/photo-1617897903246-719242758050?w=300&h=280&fit=crop" alt="Calm & Soothe" />
+            </div>
+            <div class="product-info">
+              <div class="product-top">
+                <h3 class="product-name">Calm &amp; Soothe</h3>
+                <span class="product-price">$31</span>
+              </div>
+              <p class="product-tag">Sensitivity + Redness</p>
+              <div class="product-stars">
+                <span class="stars">★★★★★</span>
+                <span class="review-count">(289)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img-box" style="background:#d4edc3;">
+              <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=300&h=280&fit=crop" alt="Green Detox Mask" />
+            </div>
+            <div class="product-info">
+              <div class="product-top">
+                <h3 class="product-name">Green Detox Mask</h3>
+                <span class="product-price">$38</span>
+              </div>
+              <p class="product-tag">Deep Cleanse + Pores</p>
+              <div class="product-stars">
+                <span class="stars">★★★★</span><span class="star-half">½</span>
+                <span class="review-count">(731)</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ ROUTINE OF THE WEEK ═══════════════ -->
+  <section class="routine" id="how">
+    <div class="routine-inner">
+      <div class="routine-content">
+        <span class="routine-badge">Editor's Choice</span>
+        <h2 class="routine-title">Routine of<br />the Week</h2>
+        <p class="routine-desc">
+          This week we're focusing on "The Glass Skin Reset"—a simple 3-step ritual to restore radiance after a long week.
+        </p>
+
+        <ol class="routine-steps">
+          <li class="routine-step">
+            <span class="step-num">01</span>
+            <div>
+              <strong>Double Cleanse</strong>
+              <p>Start with our Oil Balm followed by the Milky Wash.</p>
+            </div>
+          </li>
+          <li class="routine-step">
+            <span class="step-num">02</span>
+            <div>
+              <strong>Hyaluronic Layering</strong>
+              <p>Apply on damp skin for maximum moisture retention.</p>
+            </div>
+          </li>
+          <li class="routine-step">
+            <span class="step-num">03</span>
+            <div>
+              <strong>Seal with Silk</strong>
+              <p>Finish with our Cloud Cream to lock it all in.</p>
+            </div>
+          </li>
+        </ol>
+
+        <a href="#products" class="btn-outline-white">Shop the Routine</a>
+      </div>
+
+      <div class="routine-img-side">
+        <img
+          src="https://images.unsplash.com/photo-1617440168937-c6497eaa8db5?w=600&h=520&fit=crop"
+          alt="Skincare products on a shelf"
+          class="routine-img"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ QUIZ CTA ═══════════════ -->
+  <section class="cta" id="quiz">
+    <div class="cta-blob"></div>
+    <div class="cta-container">
+      <h2 class="cta-title">Ready for your glow up?</h2>
+      <p class="cta-sub">
+        Take our 3-minute Skin Quiz and let our dermatologists and AI<br />
+        build the perfect routine for your lifestyle.
+      </p>
+
+      <a href="#" class="btn-dark btn-lg" id="startQuizBtn">
+        Start the Quiz &nbsp;→
+      </a>
+
+      <div class="cta-stats">
+        <div class="stat">
+          <span class="stat-value">50k+</span>
+          <span class="stat-label">ROUTINES CREATED</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">98%</span>
+          <span class="stat-label">SUCCESS RATE</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo footer-logo">
+          <span class="logo-icon">✦</span>
+          glowguide
+        </a>
+        <p class="footer-tagline">
+          Redefining skincare routines for the modern age. Clean, science-driven, and clinically proven.
+        </p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Instagram" class="social-icon">&#9679;</a>
+          <a href="#" aria-label="TikTok" class="social-icon">&#9650;</a>
+          <a href="#" aria-label="Twitter" class="social-icon">&#9632;</a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#">Skin Quiz</a></li>
+          <li><a href="#">Best Sellers</a></li>
+          <li><a href="#">New Arrivals</a></li>
+          <li><a href="#">Ingredient Glossary</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Shipping &amp; Returns</a></li>
+          <li><a href="#">Skin Consultations</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-newsletter">
+        <h4>Join the Glow</h4>
+        <p>Tips, inspo, and early access to your inbox.</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input
+            type="email"
+            placeholder="Email address"
+            class="newsletter-input"
+            id="newsletterEmail"
+            required
+          />
+          <button type="submit" class="newsletter-btn" aria-label="Subscribe">→</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 GlowGuide Inc. All rights reserved.</span>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════ QUIZ MODAL ═══════════════ -->
+  <div class="modal-overlay" id="quizModal">
+    <div class="modal">
+      <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+      <div class="modal-step" id="step1">
+        <h3 class="modal-title">What's your skin type?</h3>
+        <div class="quiz-options">
+          <button class="quiz-option" data-next="step2">🛢️ Oily</button>
+          <button class="quiz-option" data-next="step2">🏜️ Dry</button>
+          <button class="quiz-option" data-next="step2">⚖️ Combination</button>
+          <button class="quiz-option" data-next="step2">🌿 Normal</button>
+          <button class="quiz-option" data-next="step2">🌸 Sensitive</button>
+        </div>
+      </div>
+      <div class="modal-step hidden" id="step2">
+        <h3 class="modal-title">What's your main concern?</h3>
+        <div class="quiz-options">
+          <button class="quiz-option" data-next="step3">🔴 Acne & Breakouts</button>
+          <button class="quiz-option" data-next="step3">⏳ Anti-Aging</button>
+          <button class="quiz-option" data-next="step3">✨ Brightening</button>
+          <button class="quiz-option" data-next="step3">💧 Hydration</button>
+          <button class="quiz-option" data-next="step3">🛡️ Sensitivity</button>
+        </div>
+      </div>
+      <div class="modal-step hidden" id="step3">
+        <h3 class="modal-title">Your personalized routine is ready!</h3>
+        <div class="quiz-result">
+          <div class="result-icon">🌟</div>
+          <p>Based on your answers, we recommend the <strong>Glass Skin Reset</strong> routine — crafted just for you.</p>
+          <a href="#products" class="btn-primary btn-lg" id="viewRoutineBtn">View My Routine</a>
+        </div>
+      </div>
+      <div class="quiz-progress">
+        <div class="progress-dot active" id="dot1"></div>
+        <div class="progress-dot" id="dot2"></div>
+        <div class="progress-dot" id="dot3"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
